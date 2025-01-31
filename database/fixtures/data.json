@@ -1,0 +1,203 @@
+[
+    {
+        "model": "database.Exercise",
+        "pk": 1,
+        "fields": {
+            "name": "Push-Up",
+            "description": "A classic bodyweight exercise for upper body strength.",
+            "instructions": "Start in a plank position, lower your body until your chest nearly touches the floor, then push up.",
+            "target_muscles": "Chest, Triceps, Shoulders"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 2,
+        "fields": {
+            "name": "Squat",
+            "description": "A fundamental lower-body exercise.",
+            "instructions": "Stand with feet shoulder-width apart, lower your hips as if sitting in a chair, then stand back up.",
+            "target_muscles": "Quadriceps, Glutes, Hamstrings"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 3,
+        "fields": {
+            "name":"deadlift",
+            "description": "A strength exercise to build posterior chain muscles.",
+            "instructions": "Stand behind a barbell, hinge at your hips, lift the barbell while keeping your back straight, then lower.",
+            "target_muscles": "Glutes, Hamstrings, Lower Back"
+        }
+    },
+        {
+        "model": "database.Exercise",
+        "pk": 4,
+        "fields": {
+            "name": "Bench Press",
+            "description": "A staple exercise for upper body strength.",
+            "instructions": "Lie on a bench, lower the barbell to your chest, then press it back up.",
+            "target_muscles": "Chest, Triceps, Shoulders"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 5,
+        "fields": {
+            "name": "Pull-Up",
+            "description": "A bodyweight exercise for back and arm strength.",
+            "instructions": "Grip the pull-up bar, pull yourself up until your chin is above the bar, then lower back down.",
+            "target_muscles": "Back, Biceps, Shoulders"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 6,
+        "fields": {
+            "name": "Plank",
+            "description": "A core stabilization exercise.",
+            "instructions": "Hold a push-up position, keeping your body in a straight line.",
+            "target_muscles": "Core, Shoulders, Glutes"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 7,
+        "fields": {
+            "name": "Lunge",
+            "description": "An excellent exercise for lower-body strength and balance.",
+            "instructions": "Step forward with one leg, lower your body until both knees are bent, then return to standing.",
+            "target_muscles": "Quadriceps, Glutes, Hamstrings"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 8,
+        "fields": {
+            "name": "Bicep Curl",
+            "description": "A basic exercise for arm strength.",
+            "instructions": "Hold dumbbells at your sides, curl them up to shoulder height, then lower back down.",
+            "target_muscles": "Biceps"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 9,
+        "fields": {
+            "name": "Tricep Dip",
+            "description": "A bodyweight exercise for the triceps.",
+            "instructions": "Use parallel bars or a sturdy chair, lower your body by bending your elbows, then push back up.",
+            "target_muscles": "Triceps, Shoulders, Chest"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 10,
+        "fields": {
+            "name": "Leg Press",
+            "description": "A machine-based lower-body exercise.",
+            "instructions": "Sit on the machine, push the platform with your legs, then return to the starting position.",
+            "target_muscles": "Quadriceps, Glutes, Hamstrings"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 11,
+        "fields": {
+            "name": "Calf Raise",
+            "description": "An exercise for the calves.",
+            "instructions": "Stand on a raised surface, lift your heels as high as possible, then lower back down.",
+            "target_muscles": "Calves"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 12,
+        "fields": {
+            "name": "Shoulder Press",
+            "description": "A strength exercise for the shoulders.",
+            "instructions": "Press dumbbells or a barbell overhead, then return to shoulder height.",
+            "target_muscles": "Shoulders, Triceps"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 13,
+        "fields": {
+            "name": "Crunch",
+            "description": "A popular abdominal exercise.",
+            "instructions": "Lie on your back, curl your torso towards your knees, then return to the starting position.",
+            "target_muscles": "Core"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 14,
+        "fields": {
+            "name": "Russian Twist",
+            "description": "A core exercise focusing on obliques.",
+            "instructions": "Sit on the floor, lean back slightly, twist your torso from side to side.",
+            "target_muscles": "Obliques, Core"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 15,
+        "fields": {
+            "name": "Rowing",
+            "description": "A full-body cardiovascular and strength exercise.",
+            "instructions": "Use a rowing machine, pulling the handle towards your chest, then extend back.",
+            "target_muscles": "Back, Arms, Core"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 16,
+        "fields": {
+            "name": "Burpee",
+            "description": "A full-body explosive movement.",
+            "instructions": "Start standing, drop into a squat, kick back into a plank, return to squat, then jump up.",
+            "target_muscles": "Full Body"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 17,
+        "fields": {
+            "name": "Kettlebell Swing",
+            "description": "A dynamic exercise for power and conditioning.",
+            "instructions": "Swing a kettlebell between your legs, then up to shoulder height using your hips.",
+            "target_muscles": "Glutes, Hamstrings, Core"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 18,
+        "fields": {
+            "name": "Dumbbell Fly",
+            "description": "An isolation exercise for the chest.",
+            "instructions": "Lie on a bench, hold dumbbells above your chest, lower them out to your sides, then bring them back up.",
+            "target_muscles": "Chest, Shoulders"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 19,
+        "fields": {
+            "name": "Mountain Climber",
+            "description": "A cardio and core exercise.",
+            "instructions": "Start in a plank, alternate driving your knees towards your chest quickly.",
+            "target_muscles": "Core, Shoulders, Legs"
+        }
+    },
+    {
+        "model": "database.Exercise",
+        "pk": 20,
+        "fields": {
+            "name": "Side Plank",
+            "description": "A core stability exercise.",
+            "instructions": "Lie on one side, prop yourself up on one elbow, hold your body straight.",
+            "target_muscles": "Obliques, Core, Shoulders"
+        }
+    }
+
+]
