@@ -13,10 +13,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-f6k!tzbsnxxvow68eu&##=d23*%d4g*n-!_69d+goz%w@_$_!k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '[::1]',
+]
 
 # Application definition
 
@@ -32,6 +35,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
     'database',
+    'pwp',
 ]
 
 MIDDLEWARE = [

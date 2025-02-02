@@ -1,0 +1,33 @@
+[
+  {
+    "model": "database.Goals",
+    "pk": 1,
+    "fields": {
+      "name": "Increase Strength"
+    }
+  },
+
+    {
+    "model": "database.Goals",
+    "pk": 2,
+    "fields": {
+      "name": "Loose Fat"
+    }
+  },
+
+    {
+    "model": "database.Goals",
+    "pk": 3,
+    "fields": {
+      "name": "Improve Endurance"
+    }
+  },
+
+    {
+    "model": "database.Goals",
+    "pk": 4,
+    "fields": {
+      "name": "Build Muscle"
+    }
+  }
+]

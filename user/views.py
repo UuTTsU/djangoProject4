@@ -43,7 +43,6 @@ class LoginUser(APIView):
             user = authenticate(username=username, password=password)
 
         if user:
-            # Generate JWT tokens
             refresh = RefreshToken.for_user(user)
             access = AccessToken.for_user(user)
             return Response({
@@ -58,7 +57,6 @@ class LogoutUser(APIView):
 
         def post(self, request):
             try:
-                # Extract and blacklist the refresh token
                 refresh_token = request.data.get('refresh_token')
                 if not refresh_token:
                     return Response({'error': 'Refresh token is required'}, status=status.HTTP_400_BAD_REQUEST)
