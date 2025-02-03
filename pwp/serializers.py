@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import WorkoutPlan, WorkoutSession, WeightTracking, FitnessGoal
+from .models import WorkoutPlan, WorkoutSession, WeightTracking, FitnessGoal, WorkoutProgress
 from database.models import Exercise, Goals
 
 class WorkoutPlanSerializer(serializers.ModelSerializer):
@@ -62,3 +62,27 @@ class FitnessGoalSerializer(serializers.ModelSerializer):
         user = self.context['request'].user
         return FitnessGoal.objects.create(user=user, **validated_data)
 
+
+
+class WorkoutProgressSerializer(serializers.ModelSerializer):
+
+
+    exercise_name = serializers.CharField(source="exercise.name", read_only=True)  # Show exercise name instead of ID
+    start_time = serializers.DateTimeField(read_only=True)  # Auto-set start time
+    end_time = serializers.DateTimeField(required=False, allow_null=True)  # User can update end time
+
+    class Meta:
+        model = WorkoutProgress
+        fields = [
+            "id", "workout_session", "exercise", "exercise_name",
+            "planned_sets", "planned_reps", "actual_sets", "actual_reps",
+            "start_time", "end_time", "is_completed", "notes"
+        ]
+        read_only_fields = ["planned_sets", "planned_reps", "start_time"]
+
+    def create(self, validated_data):
+
+        exercise = validated_data["exercise"]
+        validated_data["planned_sets"] = exercise.default_sets
+        validated_data["planned_reps"] = exercise.default_reps
+        return super().create(validated_data)
