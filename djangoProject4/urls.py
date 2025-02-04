@@ -10,7 +10,7 @@ schema_view = get_schema_view(
         title="Workout system API",
         default_version='v1',
         description="API documentation for Personalized workout plan system",
-        terms_of_service="https://your-terms-url.com",
+        terms_of_service="https://github.com/UuTTsU/djangoProject4.git",
         contact=openapi.Contact(email="giorgiutsunashvili0@gmail.com.com"),
     ),
     public=True,
