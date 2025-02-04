@@ -29,7 +29,7 @@ RESTful API for a Personalized Workout Plan system that allows users to create a
 ### Clone the Repository:
 
 ```bash
-git clone <repository-url>
+git clone <[repository-url](https://github.com/UuTTsU/djangoProject4.git)>
 cd <djangoProject4>
 ```
 
